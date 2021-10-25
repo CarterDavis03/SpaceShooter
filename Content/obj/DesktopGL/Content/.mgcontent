@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/alienship.png</File>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/bullet.png</File>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/explosion.wav</File>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/explosionTexture.png</File>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/hit.wav</File>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/ScoreFont.spritefont</File>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/shoot.wav</File>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/space.png</File>
+    <File>/home/carter/Programming/SpaceShooterAI/Content/spaceship.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

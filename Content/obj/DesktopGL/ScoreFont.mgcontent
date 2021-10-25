@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>/home/carter/Programming/SpaceShooterAI/Content/ScoreFont.spritefont</SourceFile>
+  <SourceTime>2021-10-23T20:28:59.0056054+01:00</SourceTime>
+  <DestFile>/home/carter/Programming/SpaceShooterAI/Content/bin/DesktopGL/ScoreFont.xnb</DestFile>
+  <DestTime>2021-10-25T15:02:22.5410197+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2021-10-17T16:10:31+01:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2021-10-17T16:10:31+01:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
