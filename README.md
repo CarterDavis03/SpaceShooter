@@ -27,6 +27,8 @@ Linux: dotnet-sdk-3.1 mono mgcb-editor
 
 # To Compile
 
+Open Content.mgcb in mgcb-editor and build it. Then run the commands.
+
 Linux:
 
 ``` sh
