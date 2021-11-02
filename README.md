@@ -23,4 +23,19 @@ Misc:
 
 Font - https://fonts.google.com/specimen/Russo+One#standard-styles
 
-Linux: dotnet-sdk-3.1 mono
+Linux: dotnet-sdk-3.1 mono mgcb-editor
+
+# To Compile
+
+Linux:
+
+``` sh
+dotnet publish -c Release -r linux-x64 /p:PublishReadyToRun=false /p:TieredCompilation=false --self-contained
+```
+
+Windows:
+
+``` sh
+dotnet publish -c Release -r win-x64 /p:PublishReadyToRun=false /p:TieredCompilation=false --self-contained
+```
+
