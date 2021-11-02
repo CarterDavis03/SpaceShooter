@@ -15,7 +15,7 @@ namespace SpaceShooterAI
         Texture2D alienshipTexture, bulletTexture, spaceshipTexture, background, alienshipState, spaceshipState, explosionTexture;
         SoundEffect shootSound, hitSound, explosionSound;
 
-        int ax, ay, sx, sy, velocity, sbstate, abstate, sbx, sby, abx, aby, sscore, ascore, victoryScreen, aiVelocity, aiRange, bulletVelocity;
+        int ax, ay, sx, sy, velocity, sbstate, abstate, sbx, sby, abx, aby, sscore, ascore, victoryScreen, aiVelocity, aiRange, bulletVelocity, aiBulletVelocity;
         bool sshoot, ashoot;
         string victoryText;
 
@@ -30,9 +30,9 @@ namespace SpaceShooterAI
         protected void DefaultPos()
         {
             velocity = 5;
-            bulletVelocity = 17;
+            bulletVelocity = 15;
             aiVelocity = 3;
-            aiRange = 10;
+            aiRange = 15;
             ay = 100;
             sy = 500 - 43; // Seems to be no way of getting texture height at this stage
             ax = _graphics.PreferredBackBufferWidth - 500 - 100; // Second 100 is ship width
@@ -57,6 +57,7 @@ namespace SpaceShooterAI
             _graphics.ApplyChanges();
 
             DefaultPos();
+            aiBulletVelocity = 20;
 
             victoryScreen = 1;
             victoryText = "Destroy the Alien's ship";
@@ -156,13 +157,18 @@ namespace SpaceShooterAI
             else if (sscore == 10)
             {
                 victoryText = "You win!";
-                if (victoryScreen==0){explosionSound.Play();}
+                if (victoryScreen==0)
+                {
+                    explosionSound.Play();
+                    aiBulletVelocity += 1;
+                }
                 alienshipState = explosionTexture;
                 victoryScreen = 1;
             }
             else if (ascore == 10)
             {
                 victoryText = "You lost!";
+                aiBulletVelocity = 20;
                 if (victoryScreen==0){explosionSound.Play();}
                 spaceshipState = explosionTexture;
                 victoryScreen = 1;
@@ -213,7 +219,7 @@ namespace SpaceShooterAI
 
             if (abstate == 1)
             {
-                aby += bulletVelocity;
+                aby += aiBulletVelocity;
                 if (aby + bulletTexture.Height < sy + spaceshipTexture.Height && aby + bulletTexture.Height > sy && abx > sx && abx < sx + spaceshipTexture.Width)
                 {
                     // If bullet it inside spaceship, move back to start and + to score
