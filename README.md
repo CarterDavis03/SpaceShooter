@@ -1,29 +1,32 @@
 # About
 
-SpaceShooterAI is a modified build of the simple space shooter game, SpaceShooter, built with MonoGame/XNA that includes simple AI for the opponent ship.
+SpaceShooter is a complete rewrite of the application formally known as SpaceShooterAI. This version uses classes and was not thrown together as quickly as possible.
 
 # Keybinds
 
 Movement:
 
-  * A, Left, DPad_Left - Left
-  * D, Right, DPad_Right - Right
+  * Left - Left
+  * Right - Right
 
 Combat:
 
-  * Space, Gamepad A - Shoot
+  * Space - Shoot
 
 Misc:
 
   * Q, Gamepad Back - Quit
-  * F11 - Toggle Fullscreen
   * Enter, Gamepad Start - Enter
 
 # Required for Compilation
 
 Font - https://fonts.google.com/specimen/Russo+One#standard-styles
 
-Linux: dotnet-sdk-3.1 mono mgcb-editor
+Linux: dotnet-sdk-3.1 mono mgcb-editor openal
+
+Windows: Dotnet mgcb-editor openal
+
+!!! WILL NOT COMPILE WITHOUT OPENAL, PLEASE MAKE DIRECTX PROJECT AND COPY ALL BUT CSPROJ FILE IF YOU DON'T WISH TO USE OPENGL AND OPENAL !!!
 
 # To Compile
 

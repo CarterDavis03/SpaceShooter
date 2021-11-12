@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SpaceShooterAI
+namespace SpaceShooter
 {
     public static class Program
     {
