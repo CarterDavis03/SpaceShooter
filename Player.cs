@@ -35,7 +35,7 @@ namespace SpaceShooter
             }
             if (oldState.IsKeyUp(Keys.Space) && keyboardState.IsKeyDown(Keys.Space))
             {
-                shoot(contentManager, graphics);
+                shoot(contentManager, graphics, Color.Red);
             }
 
             // Prevents repeats

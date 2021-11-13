@@ -11,12 +11,13 @@ namespace SpaceShooter
     {
 
 
-        public Bullet(float bPosX, float bPosY, ContentManager contentManager, GraphicsDevice graphics)
+        public Bullet(float bPosX, float bPosY, ContentManager contentManager, GraphicsDevice graphics, Color bulletColor)
         {
             // Set texture and pos
             Load(contentManager, "bullet");
             posX = bPosX-(Image.Width/2);
             posY = bPosY;
+            colour = bulletColor;
 
             // Determines which way to shoot based on Y
             if (posY > graphics.Viewport.Height/2)

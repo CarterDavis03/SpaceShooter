@@ -15,7 +15,7 @@ namespace SpaceShooter
         public int scrWidth, scrHeight, width, height;
         public Texture2D Image; 
 
-        public Color colour = new Color(255,255,255);
+        public Color colour = Color.White;
 
 
         public void Load(ContentManager contentManager, string assetName)

@@ -16,7 +16,7 @@ namespace SpaceShooter
         {
             // Sets default values, some of this could go but its midnight and i want sleep
             defaultVelocity = velocity = 2.5f;
-            range = Settings.aiRange;;
+            range = Settings.aiRange;
             defaultPosX = posX = scrWidth - 200 - this.Image.Width;
             posY = 100;
         }
@@ -30,7 +30,7 @@ namespace SpaceShooter
             // Makes ship shoot if in range and delay has been reached
             if (posX > enemy.posX - range &&  posX < enemy.posX + enemy.Image.Width + range && shootDelay>Settings.aiShootDelay)
             {
-                shoot(contentManager, graphics);
+                shoot(contentManager, graphics, Color.LimeGreen);
                 shootDelay = 0;
             }
 

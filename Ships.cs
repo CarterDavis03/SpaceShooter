@@ -29,11 +29,11 @@ namespace SpaceShooter
             explosionSound = contentManager.Load<SoundEffect>("explosion");
         }
 
-        public void shoot(ContentManager contentManager, GraphicsDevice graphics)
+        public void shoot(ContentManager contentManager, GraphicsDevice graphics, Color bulletColor)
         {
             if (canShoot)
             {
-                this.bullets.Add(new Bullet(posX+(Image.Width/2), posY, contentManager, graphics));
+                this.bullets.Add(new Bullet(posX+(Image.Width/2), posY, contentManager, graphics, bulletColor));
                 shootSound.Play();
             }
 
